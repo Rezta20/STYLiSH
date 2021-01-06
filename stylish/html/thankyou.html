@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/thankyou.css">
+    <script src="../javascript/fb.js"></script>
+    <script src="../javascript/profile.js"></script>
+   
+       <title>Stylish</title>
+  </head>
+  <body>
+    <!-- title  -->
+    <section class="title">
+      <div class="logo">
+        <div class="logoMobile">
+          <a href="index.html?tag=all">
+          <img class="logo" src="../images/logo.png" alt="Stylish Logo" />
+        </a>
+        </div>
+      </div>
+      
+      <div class="titleIcons">
+        <form action="index.html">
+       <input class="searchInput-Mobile searchInput" type="text" name="tag"> 
+      </form>
+      </div>
+
+      <nav class="topNavbar">
+        <li class="topNavbarContent">
+          <a href="index.html?tag=women" class='navbarA women topNavbarContenttheOther'> 女裝</a>
+        </li>
+        <div class="separateLine">|</div>
+        <li class="topNavbarContent">
+          <a href="index.html?tag=men" class='navbarA men topNavbarContenttheOther' >男裝</a>
+        </li>
+        <div class="separateLine">|</div>
+        <li class="topNavbarContent">
+          <a href="index.html?tag=accessories" class='navbarA accessory' >配件</a>
+        </li>
+      </nav>
+      <div class="titleIconWrapper">
+          <form action="index.html">
+            <input class="searchInput-Desktop searchInput" type="text" name='tag'>
+            </form>
+        
+        <div class="titleIcons">
+          <a href="cart.html">
+          <img class="cart" src="../images/cart.png" alt="cart" />
+          <div class="cartCircle">0</div>
+        </a>
+        </div>
+        <div class="titleIcons">
+          
+          <img onclick="logIntoFb()" class="login" src="../images/member.png" alt="member" />
+         
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- navbar for mobile  -->
+    <div class="blackBlock d-flex just-around">
+      <a href="index.html?tag=women" class='navbarMobile-top woman' >女裝</a>
+      <a href="index.html?tag=men" class='navbarMobile-top man' >男裝</a>
+      <a href="index.html?tag=accessories" class='navbarMobile-top accessory' >配件</a>
+    </div>
+
+    <!-- navbar bottom for mobile -->
+    <div class="blackBlockBottom">
+      <a class="navbarBottom-mobile" href="cart.html">
+        <div class="cartMobileDiv just-center align-center">
+          <div class="smallcartWrapper">
+          <img class="cartMobile" src="../images/cart-mobile.png" alt="cart" />
+          <div class="cartCircle-mobile">0</div>
+        </div> 
+          <div class="cart-mobile">購物車</div>
+        </div>
+      </a>
+      <a class="navbarBottom-mobile" href="profile.html">
+        <div onclick="logIntoFb()" class="cartMobileDiv just-center align-center">
+          <img class="memberMobile" src="../images/member-mobile.png" alt="cart" />
+          <div class="cart-mobile">會員</div>
+        </div>
+      </a>
+    </div>
+
+    <!-- product conetent -->
+    <section class="contentWrapper">
+
+        <h3>感謝您的購買，我們會盡快將商品送達！</h3>
+        <hr>
+        <p>請記住以下訂單編號，以便查詢</p>
+        <p class="orderNumber"></p>
+        <a href="./index.html">
+        <button>繼續購物</button>
+        </a>
+    </section>
+
+    <!-- footer -->
+    <footer class="bottom">
+      <div class="footerWrapper">
+        <nav class="footerNavbar">
+          <a class="footerNavbarText stylish" href="http://">關於Stylish</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">服務條款</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">隱私條款</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">聯絡我們</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">FAQ</a>
+        </nav>
+        <div class="footerIconWrapper">
+          <a class="footerNavbarItem">
+            <img class="footerNavbarIcon" src="../images/line.png" alt="line" />
+          </a>
+          <a class="footerNavbarItem">
+            <img
+              class="footerNavbarIcon"
+              src="../images/twitter.png"
+              alt="twitter"
+            />
+          </a>
+          <a class="footerNavbarItem">
+            <img
+              class="footerNavbarIcon"
+              src="../images/facebook.png"
+              alt="facebook"
+            />
+          </a>
+        </div>
+        <div class="copyright">© 2018. All rights reserved.</div>
+      </div>
+    </footer>
+
+    
+    <script src="../javascript/cartNumber.js"></script>
+    <script>
+        let urlParameter = new URLSearchParams(location.search);
+        let number = urlParameter.get("number");
+        document.querySelector('.orderNumber').innerText = `${number}`;
+    </script>
+  </body>
+</html>

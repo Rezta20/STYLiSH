@@ -1,0 +1,366 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+}
+/* title */
+.title {
+  display: flex;
+  z-index: 5;
+}
+.logo {
+  margin: 10px 15px;
+  height: 48px;
+  width: 250px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.topNavbar {
+  display: flex;
+}
+.topNavbarContent {
+  list-style-type: none;
+  padding: 35px 0px 0px 20px;
+  font-size: 16px;
+  letter-spacing: 25px;
+}
+.topNavbarContenttheOther {
+  padding: 30px 18px 0px 13px;
+}
+.navbarA {
+  text-decoration: none;
+  color: #313538;
+}
+.navbarA:hover {
+  color: #8b572a;
+}
+.separateLine {
+  color: #313538;
+  margin: 32px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.login:hover {
+  background: url(../images/member-hover.png);
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart:hover {
+  background: url(../images/cart-hover.png);
+}
+
+.cartCircle {
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 40px;
+  right: 87px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  z-index: 3;
+  background-color: #8b572a;
+  opacity: 0.7;
+}
+
+/* search */
+.searchInput {
+  border: solid 1px #979797;
+  border-radius: 25px;
+  height: 2.2rem;
+  width: 11rem;
+  margin: 12px 30px 12px 20px;
+  position: absolute;
+  right: 125px;
+  top: 13px;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.titleIconWrapper {
+  margin: 15px 10px 0 auto;
+  display: flex;
+}
+.titleIcons {
+  margin: 5px 10px;
+}
+
+/* black block line */
+.blackBlock {
+  z-index: 5;
+  width: 100%;
+  height: 20px;
+  background-color: #313538;
+}
+.navbarMobile-top {
+  display: none;
+}
+.blackBlockBottom {
+  display: none;
+}
+.navbarBottom-mobile {
+  display: none;
+}
+.topNavbarMobile {
+  display: none;
+}
+
+/* footer  */
+
+.bottom {
+  display: flex;
+  background-color: #323639;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  margin-top: 30px;
+}
+.footerWrapper {
+  margin: 30px auto;
+  display: inline-flex;
+}
+.footerNavbar {
+  margin: 7px 0;
+}
+.footerSeparateLine {
+  display: inline-flex;
+  font-weight: 150;
+  font-size: 18px;
+}
+.footerNavbarItem {
+  display: inline-flex;
+  margin: 0 10px;
+}
+.footerNavbarText {
+  color: #fff;
+  font-size: 12.8px;
+  font-family: "Noto Sans TC", 微軟正黑體, 新細明體, arial, sans-serif;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.stylish {
+  color: #af8a6c;
+  text-shadow: 0.1px 0.1px #fff;
+}
+
+.copyright {
+  color: #828282;
+  margin: 10px 10px;
+  font-size: 13px;
+}
+
+/* module practice  */
+.d-flex {
+  display: flex;
+}
+.just-around {
+  justify-content: space-around;
+}
+.just-between {
+  justify-content: space-between;
+}
+.just-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+
+/* RWD */
+
+@media only screen and (max-width: 1000px) {
+  /* title  */
+  .topNavbar {
+    display: none;
+    margin: 10px auto;
+  }
+  .searchWrapper {
+    display: none;
+  }
+  .titleIconWrapper {
+    display: none;
+  }
+  .cartCircle {
+    display: none;
+  }
+  .searchInput-Mobile {
+    display: block;
+    position: fixed;
+    top: 2px;
+    right: -20px;
+    height: 40px;
+    border: none;
+    border-width: 0px;
+    border-radius: 25px;
+    width: 36px;
+    margin: 12px 30px 12px 20px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .searchInput-Mobile:focus {
+    z-index: 2;
+    display: block;
+    position: fixed;
+    top: 2px;
+    right: 100px;
+    height: 40px;
+    width: 70%;
+    border: solid 1px #979797;
+    border-radius: 25px;
+    padding: 0px 10px;
+  }
+  .title {
+    position: fixed;
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+  }
+  .logo {
+    height: 36px;
+    width: 190px;
+    margin: 9px auto;
+  }
+
+  /* black navbar  */
+  .blackBlock {
+    z-index: 5;
+    height: 45px;
+    position: fixed;
+    top: 70px;
+  }
+  .navbarMobile-top {
+    display: flex;
+    color: #cccccc;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    width: 33%;
+    line-height: 40px;
+    font-size: 16px;
+    border-right: solid 1px #cccccc;
+    margin: 5px auto;
+  }
+  .navbarMobile-top:last-child {
+    border-right: none;
+  }
+  .titleIcons {
+    display: flex;
+  }
+
+  /* navbar bottom part  */
+  .blackBlockBottom {
+    z-index: 5;
+    display: flex;
+    background-color: #313131;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .cartMobileDiv {
+    display: flex;
+  }
+
+  .navbarBottom-mobile:hover {
+    color: #af8a6c;
+    cursor: pointer;
+  }
+
+  .smallcartWrapper {
+    position: relative;
+    display: flex;
+  }
+
+  .cartCircle-mobile {
+    text-align: center;
+    color: #ffffff;
+    background-color: #8b572a;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 20px;
+    left: 43.5%;
+    border-radius: 50%;
+    z-index: 3;
+    opacity: 0.7;
+    line-height: 20px;
+  }
+  .navbarBottom-mobile {
+    display: block;
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 70px;
+    margin: 5px 0;
+    border-right: solid 1px #cccccc;
+    position: relative;
+    width: 50%;
+  }
+  .navbarBottom-mobile:last-child {
+    border-right: none;
+  }
+
+  /* footer */
+  .footerSeparateLine {
+    display: none;
+  }
+  .footerWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+  }
+  .footerNavbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 90px;
+  }
+  .footerNavbarItem {
+    display: flex;
+    font-size: 13px;
+  }
+  .footerNavbarText {
+    margin: 5px 0;
+  }
+  .footerIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .footerNavbarIcon {
+    height: auto;
+    width: 80%;
+  }
+  .copyright {
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    max-width: 48%;
+  }
+  .cartCircle-mobile {
+    left: 40%;
+  }
+}

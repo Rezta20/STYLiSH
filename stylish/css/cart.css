@@ -1,0 +1,361 @@
+.contentWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans TC", 微軟正黑體, 新細明體, arial, sans-serif;
+  color: #3f3a3a;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.unitBar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f3a3a;
+  padding: 10px;
+}
+
+.amount,
+.unitPrice,
+.amountPrice,
+.amountBtn,
+.price,
+.priceMuti,
+.gerbage,
+.space {
+  width: 70px;
+  text-align: center;
+}
+
+.spaceTitle {
+  width: 300px;
+}
+/* shopping content */
+.shoppingContentWrapper {
+  border: solid 1px #3f3a3a;
+  padding: 10px;
+}
+.shoppingContent {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 7px 0px;
+}
+
+.mainPictureTextWrapper {
+  display: inline-flex;
+  width: 300px;
+}
+
+.mainText {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.amountBtn select {
+  height: 30px;
+  width: 40px;
+  background-color: #f3f3f3;
+  text-align-last: center;
+  border-radius: 6px;
+}
+
+.gerbage img {
+  height: 45px;
+  width: 45px;
+}
+
+.mainPicture {
+  background-image: url(https://api.appworks-school.tw/assets/201807201824/main.jpg);
+  background-size: contain;
+  width: 110px;
+  height: 145px;
+}
+
+/* under shopping content  */
+
+.transfer {
+  display: flex;
+  background-color: #e8e8e8;
+  margin: 20px 0px 20px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.half {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.transferBtn {
+  margin-left: 20px;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+.thick {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 25px;
+  border-bottom: solid 1px #3f3a3a;
+  padding-bottom: 5px;
+}
+
+.receiveBox {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputWrapper{
+  display: inline-flex;
+}
+
+.Dtime {
+}
+
+.timeWrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.time {
+  padding-left: 5px;
+}
+
+.item {
+  display: inline-block;
+  width: 18%;
+}
+
+.cartInput {
+  margin-left: 30px;
+  height: 28px;
+  width: 150px;
+  border: solid 1px #3a3f3a;
+  border-radius: 5px;
+}
+
+.payDataBox {
+  margin-top: 20px;
+  
+}
+
+
+.totalAmountBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.checkNumber {
+  padding-left: 50px;
+  font-size: 24px;
+}
+
+.payCheck {
+  display: flex;
+  margin-left: auto;
+}
+
+.checkText {
+  margin-right: 30px;
+}
+
+.d {
+  padding-right: 44px;
+}
+
+.ap {
+  margin: 0 12px 0 0;
+}
+
+.paylineWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.payline {
+  border-bottom: solid 1px #3f3a3a;
+  width: 230px;
+}
+
+.payCheck {
+  background-color: #000000;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 15px;
+  height: 50px;
+  width: 240px;
+  padding-left: 85px;
+  line-height: 50px;
+}
+
+.tpfield {
+  margin-left: 30px;
+  height: 28px;
+  width: 150px;
+  border: solid 1px #3a3f3a;
+  border-radius: 5px;
+}
+
+
+.qtyMobile,
+.priceMobile,
+.priceMutiMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentWrapper {
+    padding-top: 120px;
+  }
+
+  .cartCircle-mobile {
+    top: 32px;
+    left: 43%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .contentWrapper {
+      width: 94%;
+      display: flex;
+      align-items: center;
+    }
+    .unitBar {
+      display: none;
+    }
+
+    .shoppingContentWrapper {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .shoppingContent {
+      justify-content: space-around;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 20px 0;
+      margin: 0 auto;
+      border-bottom: solid 1px #3f3a3a;
+    }
+
+    .shoppingContent:first-child {
+      padding-top: 10px;
+    }
+
+    .shoppingContent:last-child {
+      border-bottom: none;
+    }
+
+    .qtyMobile,
+    .priceMobile,
+    .priceMutiMobile {
+      display: block;
+    }
+
+    .mainPictureTextWrapper {
+      order: 1;
+      line-height: 1.5em;
+      font-size: 14px;
+      text-align: left;
+      width: 90%;
+      margin-bottom: 12px;
+    }
+
+    .mainPicture {
+      background-repeat: no-repeat;
+    }
+
+    .amountBtn {
+      order: 3;
+    }
+
+    .price {
+      order: 4;
+    }
+    .priceMuti {
+      order: 5;
+    }
+    .gerbage {
+      order: 2;
+      width: 10%;
+    }
+
+    .receiveBox{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .item{
+      width: 100%;
+    }
+    .inputWrapper{
+      width: 100%;
+    }
+    .cartInput{
+      margin: 0;
+      width: 100%;
+      margin-top: 7px;
+    }
+    
+    .tpfield{
+      margin: 0;
+      width: 100%;
+      margin-top: 7px;
+    }
+
+    .timeWrapper{
+     width: 100%;
+     margin: 8px 0 0 0;
+    }
+
+    .thick{
+      width: 100%;
+      font-size: 17px;
+    }
+
+    .totalAmountBox, .paylineWrapper{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .payCheck{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding:0;
+      height: 45px;
+      font-size: 15px;
+      letter-spacing: 3px;
+      margin-top: 40px;
+    }
+
+    .d{
+      padding-right: 30px;
+    }
+
+    .checkText{
+      margin-right: 0;
+    }
+
+    .accountPayable{
+      padding-left: 30px;
+    }
+   
+}

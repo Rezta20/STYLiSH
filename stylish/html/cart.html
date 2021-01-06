@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0"  />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css"  type="text/css"/>
+    <link rel="stylesheet" href="../css/cart.css" type ="text/css">
+    <title>Stylish-cart</title>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.4.0"></script>
+    <script src="../javascript/fb.js"></script>
+  </head>
+  <body>
+    <!-- title  -->
+    <section class="title">
+      <div class="logo">
+        <div class="logoMobile">
+          <a href="index.html?tag=all">
+          <img class="logo" src="../images/logo.png" alt="Stylish Logo" />
+        </a>
+        </div>
+      </div>
+      
+      <div class="titleIcons">
+        <form action="index.html">
+       <input class="searchInput-Mobile searchInput" type="text" name="tag"> 
+      </form>
+      </div>
+
+      <nav class="topNavbar">
+        <li class="topNavbarContent">
+          <a href="index.html?tag=women" class='navbarA women topNavbarContenttheOther'> 女裝</a>
+        </li>
+        <div class="separateLine">|</div>
+        <li class="topNavbarContent">
+          <a href="index.html?tag=men" class='navbarA men topNavbarContenttheOther' >男裝</a>
+        </li>
+        <div class="separateLine">|</div>
+        <li class="topNavbarContent">
+          <a href="index.html?tag=accessories" class='navbarA accessory' >配件</a>
+        </li>
+      </nav>
+      <div class="titleIconWrapper">
+          <form action="index.html">
+            <input class="searchInput-Desktop searchInput" type="text" name='tag'>
+            </form>
+        
+        <div class="titleIcons">
+          <img class="cart" src="../images/cart.png" alt="cart" />
+          <div class="cartCircle">0</div>
+        </div>
+        <div class="titleIcons">
+          <img onclick="logIntoFb()" class="login" src="../images/member.png" alt="member" />
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- navbar for mobile  -->
+    <div class="blackBlock d-flex just-around">
+      <a href="index.html?tag=women" class='navbarMobile-top woman' >女裝</a>
+      <a href="index.html?tag=men" class='navbarMobile-top man' >男裝</a>
+      <a href="index.html?tag=accessories" class='navbarMobile-top accessory' >配件</a>
+    </div>
+
+    <!-- navbar bottom for mobile -->
+    <div class="blackBlockBottom">
+      <a class="navbarBottom-mobile">
+        <div class="cartMobileDiv just-center align-center">
+          <img class="cartMobile" src="../images/cart-mobile.png" alt="cart" />
+          <div class="cartCircle-mobile">0</div> 
+          <div class="cart-mobile">購物車</div>
+        </div>
+      </a>
+      <a class="navbarBottom-mobile">
+        <div onclick="logIntoFb()" class="cartMobileDiv just-center align-center">
+          <img class="memberMobile" src="../images/member-mobile.png" alt="cart" />
+          <div class="cart-mobile">會員</div>
+        </div>
+      </a>
+    </div>
+    <!-- product conetent -->
+    <section class="contentWrapper">
+
+      <div class="unitBar">
+        <div class="spaceTitle"></div>
+        <div class="amount">數量</div>
+        <div class="unitPrice">單價</div>
+        <div class="amountPrice">小計</div>
+        <div class="space"></div>
+      </div>
+      <div class="shoppingContentWrapper" style="text-align: center;">
+       
+      </div>
+      <!-- under -->
+      <div class="transfer">
+        <div class="half">
+        <div class="transferCountry"> 配送國家</div>
+        <select class="transferCountryBtn transferBtn">
+          <option value="">台灣或離島</option>
+          </select>
+      </div>
+      <div class="half">
+        <div class="payway">付款方式</div>
+        <select class="paywayBtn transferBtn">
+          <option value="">信用卡付款</option>
+        </select>
+      </div>
+      </div>
+      <div class="mention">
+        <ul>※ 提醒您：
+          <li>● 請填寫正確收件人資訊，避免包裹配送不達</li>
+          <li>● 請填寫正確收件人姓名 ( 與證件相符 )，避免無法領取</li>
+        </ul>
+      </div>
+      <div class="receiveData thick">收件資料</div>
+      <div class="receiveBox">
+        <div class="item">收件人姓名</div>
+        <div class="inputWrapper">
+        <input class="cartInput receiver" type="text">
+      </div>
+      </div>
+      <div class="receiveBox">
+        <div class="item">Email</div>
+        <div class="inputWrapper">
+        <input class="cartInput email" type="text">
+      </div>
+      </div>
+      <div class="receiveBox">
+        <div class="item">手機號碼</div>
+        <div class="inputWrapper">
+        <input class="cartInput phoneNumber" type="text">
+      </div>
+      </div>
+      <div class="receiveBox">
+        <div class="item">收件地址</div>
+        <div class="inputWrapper">
+        <input class="cartInput receiveAddress" type="text">
+      </div>
+      </div>
+      <div class="receiveBox">
+        <div class="item Dtime">配送時間</div>
+        <div class="timeWrapper">
+        <input class="inputPoint"type="radio" value="morning" name="recipientTime">
+        <span class="time">08:00-12:00</span>
+        </div>
+        <div class="timeWrapper">
+          <input class="inputPoint"type="radio" value="afternoon" name="recipientTime">
+          <span class="time">14:00-18:00</span>
+          </div>
+          <div class="timeWrapper">
+            <input class="inputPoint"type="radio" value="evening" name="recipientTime" checked>
+            <span class="time">不指定</span>
+            </div>
+          </div>
+      <div class="payData thick">付款資料</div>
+    
+      <div class="payDataBox receiveBox">
+        <div class="item">信用卡資料</div>
+        <div class="inputWrapper">
+        <div class="tpfield " id="card-number"></div>
+      </div>
+      </div>
+  
+      <div class="payDataBox receiveBox">
+        <div class="item">有效期限</div>  
+        <div class="inputWrapper">    
+        <div class="tpfield" id="card-expiration-date"></div>
+      </div>
+      </div>
+      <div class="payDataBox receiveBox">
+        <div class="item">安全碼</div>
+        <div class="inputWrapper">  
+       <div class="tpfield" id="card-ccv"></div>
+      </div>
+    </div>
+      <div class="thick"></div>
+      <div class="totalAmountBox">
+        <div class=" checkText">總金額</div>
+        <div class="totalAmount checkNumber">NT.0</div>
+      </div>
+      <div class="totalAmountBox">
+        <div class=" checkText d">運費</div>
+        <div class=" checkNumber">NT.60</div>
+      </div>
+      <div class="paylineWrapper">
+      <div class="payline"></div>
+    </div>
+      <div class="totalAmountBox">
+        <div class=" checkText ap">應付金額</div>
+        <div class="accountPayable checkNumber">NT.60</div>
+      </div>
+      <button class="payCheck">確認付款</button>
+    </section>
+
+    <!-- footer -->
+    <footer class="bottom">
+      <div class="footerWrapper">
+        <nav class="footerNavbar">
+          <a class="footerNavbarText stylish" href="http://">關於Stylish</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">服務條款</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">隱私條款</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">聯絡我們</a>
+          <div class="footerSeparateLine">|</div>
+          <a class="footerNavbarText" href="http://">FAQ</a>
+        </nav>
+        <div class="footerIconWrapper">
+          <a class="footerNavbarItem">
+            <img class="footerNavbarIcon" src="../images/line.png" alt="line" />
+          </a>
+          <a class="footerNavbarItem">
+            <img
+              class="footerNavbarIcon"
+              src="../images/twitter.png"
+              alt="twitter"
+            />
+          </a>
+          <a class="footerNavbarItem">
+            <img
+              class="footerNavbarIcon"
+              src="../images/facebook.png"
+              alt="facebook"
+            />
+          </a>
+        </div>
+        <div class="copyright">© 2018. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="../javascript/cart.js"></script>
+    <script src="../javascript/cartNumber.js"></script>
+  </body>
+</html>

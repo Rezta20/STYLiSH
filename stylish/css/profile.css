@@ -1,0 +1,55 @@
+.contentWrapper {
+  padding-top: 120px;
+  height: 29.6vh;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Noto Sans TC", "微軟正黑體", "新細明體", "arial, sans-serif";
+}
+
+.fbImg {
+  height: 180px;
+  width: 180px;
+  border: solid 1px #3f3a3a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -30px 30px 0px 0px;
+  background-position: center;
+  background-size: contain;
+}
+
+.flexWrapper {
+  display: flex;
+
+  flex-direction: column;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 450;
+}
+
+.email {
+  margin-top: 20px;
+}
+
+.logoutBtn {
+  margin: 32px 0 0 70px;
+  height: 30px;
+  width: 120px;
+  font-size: 16px;
+  background-color: #33373a;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #af8a6c;
+  cursor: pointer;
+  box-shadow: 1px 2px #33373a;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contentWrapper {
+    padding-top: 200px;
+  }
+}
