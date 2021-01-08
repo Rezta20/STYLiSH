@@ -11,6 +11,7 @@ function Fbfamily() {
     });
     FB.getLoginStatus(function (response) {
       console.log(response);
+      console.log("hello");
       if (response.status === "connected") {
         facebookToken.access_token = response.authResponse.accessToken;
         fetch("https://api.appworks-school.tw/api/1.0/user/signin", {
