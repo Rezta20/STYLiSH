@@ -47,7 +47,7 @@ function logIntoFb() {
       { scope: "email", auth_type: "rerequest" }
     );
   } else {
-    window.location = "/STYLiSH/stylish/html/profile.html";
+    window.location = "./profile.html";
   }
   console.log("hi");
 }
