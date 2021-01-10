@@ -21,25 +21,21 @@ STYLiSH is a E-commerce website for people to buy the clothes and accessaries.
   - Prettier
 
 ##  :shirt: Functions Demo 
-### Upload The Post 
-Uploaded the post data to Cloud Firestore and retrived the real-time data
-![upload](https://user-images.githubusercontent.com/63142258/104119009-b5b1d700-5367-11eb-8a26-e200bd97a132.gif)
+### Infinite Scroll 
+![infinite scroll](https://user-images.githubusercontent.com/63142258/104122927-0256db80-5383-11eb-923a-1b451c69fe4d.gif)
 
-### Edit The Post 
-Utilized the React Selector Kit to make the user create thier own unique tags for their photo
-![edit](https://user-images.githubusercontent.com/63142258/104119011-b77b9a80-5367-11eb-818d-10df8b283f10.gif)
+### Add to Shopping Cart
+![add to cart](https://user-images.githubusercontent.com/63142258/104122914-e0f5ef80-5382-11eb-88b6-0f27ef2d4a30.gif)
 
-### Customized Google Maps API
-Connected to Google Maps API, customized info-windows & marks on the map
-![google maps](https://user-images.githubusercontent.com/63142258/104119190-cc0c6280-5368-11eb-9069-4cc36acf365e.gif)
+### Calculate the Total Price
+![calculate total](https://user-images.githubusercontent.com/63142258/104122946-26b2b800-5383-11eb-81e5-b710259f27ca.gif)
 
-### Sent The Reservation Notification E-mail
-Sent the reservation notification e-mail to user through Firebase Cloud Functions
-![mail](https://user-images.githubusercontent.com/63142258/104119261-2f969000-5369-11eb-9f02-4a795bf34340.gif)
 
-### Full Calendar Kit
-Provided calendar to select the date by Full Calendar Kit when the users booking the service
-![calendar](https://user-images.githubusercontent.com/63142258/104119295-5654c680-5369-11eb-8ed4-509469f6b457.gif)
+### Remove Shopping Cart Item
+![remove](https://user-images.githubusercontent.com/63142258/104122957-37fbc480-5383-11eb-9279-d55f0f188e76.gif)
+
+### Facebook SDK
+![facebook SDK](https://user-images.githubusercontent.com/63142258/104122969-4b0e9480-5383-11eb-9c49-e7c0333a48b8.gif)
 
 ## :shirt: Contact
 Email: mariafu0801@gmail.com
