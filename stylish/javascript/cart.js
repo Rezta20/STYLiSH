@@ -152,7 +152,7 @@ function renderElement() {
     shoppingContent.appendChild(gerbage);
 
     let gerbageImg = document.createElement("img");
-    gerbageImg.src = "https://api.appworks-school.tw/imgs/cart-remove.png";
+    gerbageImg.src = "../images/cart-remove.png";
     gerbage.appendChild(gerbageImg);
   }
   eachTotal();
